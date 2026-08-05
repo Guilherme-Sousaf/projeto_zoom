@@ -1,0 +1,138 @@
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        'capa_conteudo capa_imagem'
+        'organizacao_imagem organizacao_conteudo'
+    ;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.9em;
+    background-color: #f6f4ff;
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+}
+
+nav li{
+    margin: 0 5px;
+}
+
+nav a:hover{
+    color: #5353e9;
+}
+
+.botoes{
+    margin-left: auto;
+}
+
+.botao1{
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 0.5em;
+    color: blue;
+}
+
+.botao1:hover{
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 0.5em;
+    color: blue;
+    background-color: #dad9d9;
+}
+
+.botao2{
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 0.5em;
+    color: white;
+    background-color: blue;
+    align-self: flex-start;
+}
+
+.botao2:hover{
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 0.5em;
+    color: white;
+    background-color: #4343d4;
+}
+
+section#capa_conteudo{
+    grid-area: capa_conteudo;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+section#capa_imagem{
+    grid-area: capa_imagem;
+}
+
+section#capa_imagem > img{
+    max-width: 100%;
+}
+
+section#organizacao_imagem{
+    grid-area: organizacao_imagem;
+}
+
+section#organizacao_imagem > img{
+    max-width: 100%;
+}
+
+section#organizacao_conteudo{
+    grid-area: organizacao_conteudo;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+.texto_destaque{
+    color: #3333e6;
+}
+
+footer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-bottom: 25px;
+    background-color: #f0f0f0;
+}
