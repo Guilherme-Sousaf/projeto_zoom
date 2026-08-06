@@ -62,7 +62,7 @@ Durante este projeto foram praticados conceitos como:
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/projeto_zoom.git
+git clone https://github.com/Guilherme-Sousaf/projeto_zoom.git
 ```
 
 2. Abra o arquivo `index.html` no navegador.
